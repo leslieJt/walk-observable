@@ -1,0 +1,33 @@
+{
+  "name": "walk-observable",
+  "version": "1.0.0",
+  "description": "observable version for walk based on rxjs.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartyJiang/walk-observable.git"
+  },
+  "keywords": [
+    "walk",
+    "observable",
+    "rxjs"
+  ],
+  "author": "MartyJiang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MartyJiang/walk-observable/issues"
+  },
+  "homepage": "https://github.com/MartyJiang/walk-observable#readme",
+  "dependencies": {
+    "rxjs": "^5.5.3",
+    "walk": "^2.3.9",
+    "xtend": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
