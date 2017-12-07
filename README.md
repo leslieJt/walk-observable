@@ -1,5 +1,7 @@
 # walk-observable
 
+[![NPM](https://nodei.co/npm/walk-observable.png)](https://nodei.co/npm/walk-observable/)
+
 observable version for [walk](https://www.npmjs.com/package/walk) based on
 [rxjs](https://www.npmjs.com/package/rxjs).
 
