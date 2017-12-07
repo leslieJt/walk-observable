@@ -1,6 +1,6 @@
 {
   "name": "walk-observable",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "observable version for walk based on rxjs.",
   "main": "index.js",
   "scripts": {},
