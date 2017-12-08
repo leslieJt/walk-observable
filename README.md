@@ -19,16 +19,10 @@ const walk = require('./index')
 const { filter } = require('rxjs/operators/filter')
 
 walk('./', { filters: ['node_modules'] })
-  .pipe(
-    filter(v => {
-      v.next()
-      return v.stat.name.match(/\.json$/)
-    })
-  )
+  .pipe(filter(v => v.stat.name.match(/\.json$/)))
   .subscribe({
     next: v => {
       console.log(`type: ${v.type} / ${path.join(v.root, v.stat.name)}`)
-      v.next()
     },
     error: err => console.error(err),
     complete: () => console.log('done.'),
@@ -47,5 +41,13 @@ walk(path, [options])
   `directoryError`, `errors`
 * `breakOnError` - whether Observable emit error when encounter any error,
   default is `true`
+* `autoNext` - whether walk process goto next automatically, default is `true`,
+  if it's `false`, then you gonna invoke `next` manually.
+  ```js
+  walk('./', { filters: ['node_modules'], autoNext: false }).subscribe(v => {
+    console.log(`type: ${v.type} / ${path.join(v.root, v.stat.name)}`)
+    v.next()
+  })
+  ```
 
 see [walk](https://www.npmjs.com/package/walk) for more details.

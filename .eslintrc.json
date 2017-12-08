@@ -4,7 +4,7 @@
     "node": true
   },
   "rules": {
-    "no-multi-assign": 0,
+    "consistent-return": 0,
     "no-param-reassign": 0
   }
 }
