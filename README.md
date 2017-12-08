@@ -42,7 +42,9 @@ walk(path, [options])
 ### Options
 
 * `share` - whether Observable that returned is cold or hot, default is `false`
-* `types` - listener types, default is only `file`
+* `types` - listener types, default is only `file`,it can be `names`,
+  `directory`, `directories`, `file`, `files`, `end`, `nodeError`,
+  `directoryError`, `errors`
 * `breakOnError` - whether Observable emit error when encounter any error,
   default is `true`
 
