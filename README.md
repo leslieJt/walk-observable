@@ -1,5 +1,7 @@
 # walk-observable
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/leslieJt/walk-observable.svg)](https://greenkeeper.io/)
+
 [![NPM](https://nodei.co/npm/walk-observable.png)](https://nodei.co/npm/walk-observable/)
 
 observable version for [walk](https://www.npmjs.com/package/walk) based on
