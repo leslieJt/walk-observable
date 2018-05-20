@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/MartyJiang/walk-observable#readme",
   "dependencies": {
-    "rxjs": "^5.5.3",
+    "rxjs": "^6.1.0",
     "walk": "^2.3.9",
     "xtend": "^4.0.1"
   },
